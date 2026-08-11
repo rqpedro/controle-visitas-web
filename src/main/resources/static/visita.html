@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Visitas - Cadastrar Visita</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <span class="logo">Controle de Visitas</span>
+        <nav>
+            <a href="area.html">Áreas</a>
+            <a href="processo.html">Processos</a>
+            <a href="dashboard.html" class="ativo">Visitas</a>
+            <a href="index.html">Sair</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-centralizado">
+            <a href="dashboard.html" class="link-voltar">‹ Voltar</a>
+
+            <div class="cartao">
+                <h2>Cadastro de visita</h2>
+                <p class="subtitulo">Selecione os dados e a data da visita</p>
+
+                <div class="aviso" id="aviso"></div>
+
+                <form id="formVisita" novalidate>
+                    <div class="campo" id="campoArea">
+                        <label for="area">Área</label>
+                        <select id="area" name="area">
+                            <option value="">Selecione...</option>
+                        </select>
+                        <span class="mensagem-erro">Selecione uma área.</span>
+                    </div>
+
+                    <div class="campo" id="campoProcesso">
+                        <label for="processo">Processo</label>
+                        <select id="processo" name="processo">
+                            <option value="">Selecione...</option>
+                        </select>
+                        <span class="mensagem-erro">Selecione um processo.</span>
+                    </div>
+
+                    <div class="campo" id="campoUsuario">
+                        <label for="usuario">Usuário</label>
+                        <select id="usuario" name="usuario">
+                            <option value="">Selecione...</option>
+                        </select>
+                        <span class="mensagem-erro">Selecione um usuário.</span>
+                    </div>
+
+                    <div class="campo" id="campoData">
+                        <label for="data">Data</label>
+                        <input type="date" id="data" name="data">
+                        <span class="mensagem-erro">Informe a data da visita.</span>
+                    </div>
+
+                    <button type="submit" class="botao">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/visita.js"></script>
+</body>
+</html>

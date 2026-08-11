@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Visitas - Acesso</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <span class="logo">Controle de Visitas</span>
+        <nav></nav>
+    </header>
+
+    <main>
+        <div class="grade-acesso">
+
+            <!-- Cadastro -->
+            <section class="cartao">
+                <h2>Cadastre-se</h2>
+                <p class="subtitulo">Preencha seus dados para começar</p>
+
+                <div class="aviso" id="avisoCadastro"></div>
+
+                <form id="formCadastro" novalidate>
+                    <div class="campo" id="campoNome">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome">
+                        <span class="mensagem-erro">Informe o nome.</span>
+                    </div>
+
+                    <div class="campo" id="campoEmail">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email">
+                        <span class="mensagem-erro">Informe um e-mail válido.</span>
+                    </div>
+
+                    <div class="campo" id="campoLogin">
+                        <label for="loginCad">Login</label>
+                        <input type="text" id="loginCad" name="loginCad">
+                        <span class="mensagem-erro">Informe o login.</span>
+                    </div>
+
+                    <div class="campo" id="campoSenha">
+                        <label for="senhaCad">Senha</label>
+                        <input type="password" id="senhaCad" name="senhaCad">
+                        <span class="mensagem-erro">A senha deve ter ao menos 3 caracteres.</span>
+                    </div>
+
+                    <button type="submit" class="botao">Cadastrar</button>
+                </form>
+            </section>
+
+            <!-- Login -->
+            <section class="cartao">
+                <h2>Faça login na sua conta</h2>
+                <p class="subtitulo">Acesse com login e senha</p>
+
+                <div class="aviso" id="avisoLogin"></div>
+
+                <form id="formLogin" novalidate>
+                    <div class="campo" id="campoLoginAcesso">
+                        <label for="login">Login</label>
+                        <input type="text" id="login" name="login">
+                        <span class="mensagem-erro">Informe o login.</span>
+                    </div>
+
+                    <div class="campo" id="campoSenhaAcesso">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha">
+                        <span class="mensagem-erro">Informe a senha.</span>
+                    </div>
+
+                    <button type="submit" class="botao">Acessar</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="js/acesso.js"></script>
+</body>
+</html>

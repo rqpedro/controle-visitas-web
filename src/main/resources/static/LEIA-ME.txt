@@ -1,0 +1,28 @@
+SISTEMA DE CONTROLE DE VISITAS - FRONT-END (Etapa 8)
+=====================================================
+
+Estrutura de arquivos:
+
+  index.html        -> Tela de acesso (cadastro + login)
+  dashboard.html    -> Painel com a listagem de visitas
+  area.html         -> Cadastro de area
+  processo.html     -> Cadastro de processo
+  visita.html       -> Cadastro de visita
+
+  css/estilo.css    -> Folha de estilo (CSS) compartilhada por todas as paginas
+
+  js/acesso.js           -> Validacoes da tela de acesso
+  js/dashboard.js        -> Monta a tabela de visitas e trata exclusao
+  js/cadastro-simples.js -> Validacao dos cadastros de area e processo
+  js/visita.js           -> Validacao do cadastro de visita
+
+Como abrir:
+  Basta abrir o arquivo index.html em um navegador (duplo clique).
+  A navegacao entre as telas ja esta ligada pelo menu.
+
+Observacoes:
+  - Conforme a Etapa 8, o front-end NAO se conecta ao banco de dados.
+    Os dados exibidos sao simulados (ex.: a lista de visitas no dashboard).
+  - As validacoes de campos obrigatorios e de formato (e-mail, senha)
+    sao feitas em JavaScript, com destaque visual e mensagem de erro.
+  - A integracao com o back-end acontece na Etapa 9.

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Visitas - Painel</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <span class="logo">Controle de Visitas</span>
+        <nav>
+            <a href="area.html">Áreas</a>
+            <a href="processo.html">Processos</a>
+            <a href="dashboard.html" class="ativo">Visitas</a>
+            <a href="index.html">Sair</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="barra-topo">
+            <h2>Visitas cadastradas</h2>
+            <a href="visita.html" class="botao botao-secundario">+ Nova visita</a>
+        </div>
+
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Área</th>
+                    <th>Processo</th>
+                    <th>Usuário</th>
+                    <th>Data</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela">
+                <!-- Preenchido via JavaScript -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

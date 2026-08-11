@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Visitas - Cadastrar Área</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <span class="logo">Controle de Visitas</span>
+        <nav>
+            <a href="area.html" class="ativo">Áreas</a>
+            <a href="processo.html">Processos</a>
+            <a href="dashboard.html">Visitas</a>
+            <a href="index.html">Sair</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-centralizado">
+            <a href="dashboard.html" class="link-voltar">‹ Voltar</a>
+
+            <div class="cartao">
+                <h2>Cadastrar área</h2>
+                <p class="subtitulo">Informe o nome da área a ser cadastrada</p>
+
+                <div class="aviso" id="aviso"></div>
+
+                <form id="formArea" novalidate>
+                    <div class="campo" id="campoNomeArea">
+                        <label for="nomeArea">Nome da área</label>
+                        <input type="text" id="nomeArea" name="nomeArea">
+                        <span class="mensagem-erro">Informe o nome da área.</span>
+                    </div>
+
+                    <button type="submit" class="botao">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const CONFIG_FORM = {
+        idForm: "formArea",
+        idCampo: "campoNomeArea",
+        idInput: "nomeArea",
+        endpoint: "/areas",
+        campoApi: "nomeArea",
+        mensagemSucesso: "Área cadastrada com sucesso!"
+    };
+    </script>
+    <script src="js/cadastro-simples.js"></script>
+</body>
+</html>
